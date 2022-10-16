@@ -28,4 +28,4 @@ This UX upgrades would be made if this project would make to production:
     - Buttons to increase or decrease the quantity of each product.
 
 - Newsletter:
-	- Submit event: Was made in another version, does not have localStorage or any alert on click.
+    - Submit event: Was made in another version, does not have localStorage or any alert on click.
