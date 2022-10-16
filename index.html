@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="styles/reset.css" /> 
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.2/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('jGp3AKFG8POBv0dSh')
+    </script>
+    <title>drinkScript.com</title>
+</head>
+
+<body>
+  <span id="modal_container">
+  </span>
+
+    <div class="header_one">
+        Proyecto Javascript Andrea Addiego
+    </div>
+
+    <header class="header_two">
+        <a href="https://youtu.be/dQw4w9WgXcQ">
+            <img src="img/drinkScript.png" class="logo" alt="" id="logo">
+        </a>
+        <nav>
+        <div class="menu_align">
+            <ul class="flex_menu">
+                <li class="menu_links" id="wst0">Destacados</li>
+                <li class="menu_links" id="wst1">Absolut Collection</li>
+                <li class="menu_links" id="wst2">Ofertas</li>
+                <li class="menu_links" id="wst3">Newsletter</li>
+                <li class="menu_links" id="wst4">Contacto</li>
+            </ul>
+        </div>
+        </nav>
+        <div>
+            <div>
+                <input type="text" class="inputs" id="search" placeholder="Buscar..." autocomplete="off">
+
+                <button class="carrito" id="mostrar_carrito">🛒​</button>
+    </header>
+
+    <div class="slide_one"> 
+        <div class="container" id="carrito"> 
+            <h2 class="cart">CARRITO</h2>
+            <table class="tabla_carrito">
+                <thead> 
+                    <tr>
+                        <td>PRODUCTO</td>
+                        <td>CANTIDAD</td>
+                        <td>PRECIO</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="tbody"> 
+                    
+                </tbody>
+            </table>
+            <div class="cart_align">
+                <div id="total">
+                </div>
+                <button class="button" id="finalizar">FINALIZAR COMPRA</button>
+            </div>
+        </div> 
+    </div>
+
+    <section class="short_text"> 
+        PRODUCTOS DESTACADOS
+    </section>
+
+    <main class="productos">
+        <div id="contenedor_productos">
+         
+        </div>
+    </main>
+
+    <section class="short_text">
+        ABSOLUT COLLECTION
+    </section>
+    <div class="productos">
+        <div id="contenedor_absolut">
+         
+        </div>
+    </div>
+
+    <section class="short_text">
+        OFERTAS
+    </section>
+    <div class="productos">
+        <div id="contenedor_ofertas">
+         
+        </div>
+    </div>
+    
+    <footer>
+        <div class="suscribe">
+            <form action="" id="form_suscribe"> 
+                <section class="short_text">
+                    SUSCRIBETE A NUESTRO NEWSLETTER PARA RECIBIR TODAS LAS NOVEDADES Y OFERTAS
+                </section>
+                <div class="espaciado">
+                    <input type="email" name="email" id="email" placeholder="Dirección de correo electrónico" autocomplete="off">
+                    <button class="button">Suscribirse</button>
+                </div>
+            </form>
+        </div>
+        <section class="short_text">
+            CONTACTO
+        </section>
+        <div class="button_up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="flex">
+            <form id="form">
+                <div class="field">
+                    <label for="from_name">Nombre</label>
+                    <input type="text" class="inputs" name="from_name" id="from_name" autocomplete="off">
+                </div>
+                <div class="field">
+                    <label for="message">Mensaje</label>
+                    <input type="text" class="inputs" name="message" id="message" autocomplete="off">
+                </div>
+                <div class="field">
+                    <label for="email_id">Email</label>
+                    <input type="text" class="inputs" name="email_id" id="email_id" autocomplete="off">
+                </div>
+                <input type="submit" id="button_send" value="Enviar" >
+            </form>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.892177827607!2d-56.140339316270804!3d-34.90939513728175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f816aefb8eca3%3A0xb33719c07a8dfaa0!2sLetras%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1665355737619!5m2!1ses-419!2suy" width="350" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="pago">
+            <img src="img/pago.png">
+        </div>
+        <div class="copyright">Hecho con mucho 🧉 y ❤️ en Uruwhy, por Andy Addiego.</div>
+    </footer>
+    
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="js/miarchivo.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
