@@ -8,7 +8,7 @@ Mejoras de UX en caso que fuese un proyecto que saliese a produccion:
 	
 - Carrito: 
 	- Corrección de aspectos visuales. 
-	- Botones para icrementar/disminuir la cantidad de cada producto.
+	- Botones para incrementar/disminuir la cantidad de cada producto.
 
 - Newsletter:
 	- Evento submit: Incorporado para una preentrega, no cuenta con localStorage ni alerta al clickear.
